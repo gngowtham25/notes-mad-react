@@ -8,7 +8,7 @@ class Nav extends Component {
       <div className="nav-container">
         <div className="nav-logo">Notes</div>
         <div className="nav-button" onClick={() => toggleNote()} >
-          { showNote ? 'Cancel' :  'Add Note' }
+          { showNote ? 'Back' :  'Add Note' }
         </div> 
       </div>
     );

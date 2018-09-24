@@ -55,7 +55,7 @@ class Note extends Component {
               <DebounceInput
                 className="note-title-input"
                 type="text"
-                debounceTimeout={300}
+                debounceTimeout={1000}
                 placeholder="Note Title..."
                 value={this.state.title}
                 onChange={event => {
@@ -69,7 +69,7 @@ class Note extends Component {
                 className="note-textarea"
                 element="textarea"
                 placeholder="Type Here..."
-                debounceTimeout={300}
+                debounceTimeout={1000}
                 value={this.state.content}
                 onChange={event => {
                   this.setState({content: event.target.value})
