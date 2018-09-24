@@ -22,7 +22,7 @@ class Note extends Component {
   }
 
   onFormSubmit() {
-    if(this.state.title.length == 0 || this.state.content.length == 0){
+    if(this.state.title.length === 0 || this.state.content.length === 0){
       return
     }
     const formData = {
@@ -41,7 +41,7 @@ class Note extends Component {
 
 
   render() {
-    const { note, versionId, switchVersion, populateVersions } = this.props;
+    const { note, switchVersion, populateVersions } = this.props;
     // const { noteData } = this.state
     return (
       <div>

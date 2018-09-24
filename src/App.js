@@ -5,7 +5,6 @@ import List from './components/List';
 import Note from './components/Note';
 import axios from 'axios';
 import urlFor from './helpers/urlFor';
-import Flash from './components/Flash';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
@@ -57,7 +56,7 @@ class App extends Component {
 
   switchVersion = (versionId, note) => {
     let newNoteData = note.versions.filter((eachVersion) => {
-      if(eachVersion._id == versionId){
+      if(eachVersion._id === versionId){
         return eachVersion
       }
     })[0];
@@ -113,7 +112,7 @@ class App extends Component {
   }
 
   render() {
-    const { showNote, notes, note, error,versionId, displayNoteData } = this.state;
+    const { showNote, notes, note, versionId, displayNoteData } = this.state;
 
     return (
       <div className="App">
